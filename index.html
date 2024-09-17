@@ -1,97 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="stylesheet" href="./reset.css" />
-		<link rel="stylesheet" href="./styles.css" />
-		<script defer src="./script.js"></script>
-	</head>
-	<body>
-		<main class="main">
-			<div class="container">
-				<div class="slider slider__image">
-					<div class="slider__wrapper slider__wrapper-image">
-						<div class="slider__row slider__row-image">
-							<div class="slider__item slider__item-image">
-								<img
-									src="./images/pets-charly.png"
-									alt="charly"
-									class="image"
-								/>
-							</div>
-							<div class="slider__item slider__item-image">
-								<img
-									src="./images/pets-jennifer.png"
-									alt="jennifer"
-									class="image"
-								/>
-							</div>
-							<div class="slider__item slider__item-image">
-								<img
-									src="./images/pets-scarlet.png"
-									alt="scarlet"
-									class="image"
-								/>
-							</div>
-							<div class="slider__item slider__item-image">
-								<img src="./images/pets-woody.png" alt="woody" class="image" />
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="slider slider__text">
-					<div class="slider__wrapper slider__wrapper-text">
-						<div class="slider__row slider__row-text">
-							<div class="slider__item slider__item-text">
-								<p class="text">
-									This cute boy, Charly, is three years old and he likes adults
-									and kids. He isn’t fond of many other dogs, so he might do
-									best in a single dog home. Charly has lots of energy, and
-									loves to run and play. We think a fenced yard would make him
-									very happy.
-								</p>
-							</div>
-							<div class="slider__item slider__item-text">
-								<p class="text">
-									Jennifer is a sweet 2 months old Labrador that is patiently
-									waiting to find a new forever home. This girl really enjoys
-									being able to go outside to run and play, but won't hesitate
-									to play up a storm in the house if she has all of her favorite
-									toys.
-								</p>
-							</div>
-							<div class="slider__item slider__item-text">
-								<p class="text">
-									Scarlet is a happy, playful girl who will make you laugh and
-									smile. She forms a bond quickly and will make a loyal
-									companion and a wonderful family dog or a good companion for a
-									single individual too since she likes to hang out and be with
-									her human.
-								</p>
-							</div>
-							<div class="slider__item slider__item-text">
-								<p class="text">
-									Woody is a handsome 3 1/2 year old boy. Woody does know basic
-									commands and is a smart pup. Since he is on the stronger side,
-									he will learn a lot from your training. Woody will be happier
-									when he finds a new family that can spend a lot of time with
-									him.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="pagination__list">
-					<div class="pagination__item pagination__item--active">
-						<div class="control"></div>
-					</div>
-					<div class="pagination__item"><div class="control"></div></div>
-					<div class="pagination__item"><div class="control"></div></div>
-					<div class="pagination__item"><div class="control"></div></div>
-				</div>
-			</div>
-		</main>
-	</body>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8"/>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel = "stylesheet" href = "./reset.css"/>
+    <link rel = "stylesheet" href = "./styles.css"/>
+    <script defer src = "./script.js"></script>
+</head>
+<body>
+<div class = "wrapper">
+    <input type = "radio" name = "point" id = "slide1" checked>
+    <input type = "radio" name = "point" id = "slide2">
+    <input type = "radio" name = "point" id = "slide3">
+    <input type = "radio" name = "point" id = "slide4">
+    <div class = "slider slider__image">
+        <div class = "slides slide1">
+            <img
+                    src = "./images/pets-charly.png"
+                    alt = "charly"
+                    class = "image"
+            />
+        </div>
+        <div class = "slides slide2">
+            <img
+                    src = "./images/pets-jennifer.png"
+                    alt = "jennifer"
+                    class = "image"
+            />
+        </div>
+        <div class = "slides slide3">
+            <img
+                    src = "./images/pets-scarlet.png"
+                    alt = "scarlet"
+                    class = "image"
+            />
+        </div>
+        <div class = "slides slide4">
+            <img src = "./images/pets-woody.png" alt = "woody" class = "image"/>
+        </div>
+    </div>
+    <div class = "slider slider__text">
+        <div class = "slides slide1">
+            This cute boy, Charly, is three years old and he likes adults
+            and kids. He isn’t fond of many other dogs, so he might do
+            best in a single dog home. Charly has lots of energy, and
+            loves to run and play. We think a fenced yard would make him
+            very happy.
+        </div>
+        <div class = "slides slide2">
+            Jennifer is a sweet 2 months old Labrador that is patiently
+            waiting to find a new forever home. This girl really enjoys
+            being able to go outside to run and play, but won't hesitate
+            to play up a storm in the house if she has all of her favorite
+            toys.
+        </div>
+        <div class = "slides slide3">
+            Scarlet is a happy, playful girl who will make you laugh and
+            smile. She forms a bond quickly and will make a loyal
+            companion and a wonderful family dog or a good companion for a
+            single individual too since she likes to hang out and be with
+            her human.
+        </div>
+        <div class = "slides slide4">
+            Woody is a handsome 3 1/2 year old boy. Woody does know basic
+            commands and is a smart pup. Since he is on the stronger side,
+            he will learn a lot from your training. Woody will be happier
+            when he finds a new family that can spend a lot of time with
+            him.
+        </div>
+    </div>
+    <div class = "controls">
+        <label for = "slide1"></label>
+        <label for = "slide2"></label>
+        <label for = "slide3"></label>
+        <label for = "slide4"></label>
+    </div>
+</div>
+</body>
 </html>
