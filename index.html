@@ -9,73 +9,54 @@
     <script defer src = "./script.js"></script>
 </head>
 <body>
-<div class = "wrapper">
-    <input type = "radio" name = "point" id = "slide1" checked>
-    <input type = "radio" name = "point" id = "slide2">
-    <input type = "radio" name = "point" id = "slide3">
-    <input type = "radio" name = "point" id = "slide4">
-    <div class = "slider slider__image">
-        <div class = "slides slide1">
-            <img
-                    src = "./images/pets-charly.png"
-                    alt = "charly"
-                    class = "image"
-            />
+<main class = "main">
+    <div id = "wrapper">
+        <input class = "input" type = "radio" name = "slider" id = "switch-1" checked>
+        <input class = "input" type = "radio" name = "slider" id = "switch-2">
+        <input class = "input" type = "radio" name = "slider" id = "switch-3">
+        <input class = "input" type = "radio" name = "slider" id = "switch-4">
+        <div class = "container">
+            <div class = "list">
+                <div class = "image">
+                    <img
+                            src = "./images/pets-charly.png"
+                            alt = "charly"
+                    />
+                </div>
+                <div class = "image">
+                    <img
+                            src = "./images/pets-jennifer.png"
+                            alt = "jennifer"
+                    />
+                </div>
+                <div class = "image">
+                    <img
+                            src = "./images/pets-scarlet.png"
+                            alt = "scarlet"
+                    />
+                </div>
+                <div class = "image">
+                    <img src = "./images/pets-woody.png" alt = "woody"/>
+                </div>
+            </div>
         </div>
-        <div class = "slides slide2">
-            <img
-                    src = "./images/pets-jennifer.png"
-                    alt = "jennifer"
-                    class = "image"
-            />
-        </div>
-        <div class = "slides slide3">
-            <img
-                    src = "./images/pets-scarlet.png"
-                    alt = "scarlet"
-                    class = "image"
-            />
-        </div>
-        <div class = "slides slide4">
-            <img src = "./images/pets-woody.png" alt = "woody" class = "image"/>
-        </div>
-    </div>
-    <div class = "slider slider__text">
-        <div class = "slides slide1">
-            This cute boy, Charly, is three years old and he likes adults
-            and kids. He isn’t fond of many other dogs, so he might do
-            best in a single dog home. Charly has lots of energy, and
-            loves to run and play. We think a fenced yard would make him
-            very happy.
-        </div>
-        <div class = "slides slide2">
-            Jennifer is a sweet 2 months old Labrador that is patiently
-            waiting to find a new forever home. This girl really enjoys
-            being able to go outside to run and play, but won't hesitate
-            to play up a storm in the house if she has all of her favorite
-            toys.
-        </div>
-        <div class = "slides slide3">
-            Scarlet is a happy, playful girl who will make you laugh and
-            smile. She forms a bond quickly and will make a loyal
-            companion and a wonderful family dog or a good companion for a
-            single individual too since she likes to hang out and be with
-            her human.
-        </div>
-        <div class = "slides slide4">
-            Woody is a handsome 3 1/2 year old boy. Woody does know basic
-            commands and is a smart pup. Since he is on the stronger side,
-            he will learn a lot from your training. Woody will be happier
-            when he finds a new family that can spend a lot of time with
-            him.
+        <div class = "block">
+            <div class = "title">
+                <div id = "title__text" class = "title__text">
+                    <div class = "text">Charly</div>
+                    <div class = "text">Jennifer</div>
+                    <div class = "text">Scarlett</div>
+                    <div class = "text">Woody</div>
+                </div>
+            </div>
+            <div id = "controls" class = "controls">
+                <label for = "switch-1" class = "control control_1"><span class = "dot dot_1"></span></label>
+                <label for = "switch-2" class = "control control_2"><span class = "dot dot_2"></span></label>
+                <label for = "switch-3" class = "control control_3"><span class = "dot dot_3"></span></label>
+                <label for = "switch-4" class = "control control_4"><span class = "dot dot_4"></span></label>
+            </div>
         </div>
     </div>
-    <div class = "controls">
-        <label for = "slide1"></label>
-        <label for = "slide2"></label>
-        <label for = "slide3"></label>
-        <label for = "slide4"></label>
-    </div>
-</div>
+</main>
 </body>
 </html>
